@@ -12,21 +12,25 @@ class CountingDuplicatesTest {
 	@Test
 	public void abcdeReturnsZero() {
 		assertEquals(0, CountingDuplicates.duplicateCount("abcde"));
+		assertEquals(0, CountingDuplicates.cleverDuplicateCount("abcde"));
 	}
 
 	@Test
 	public void abcdeaReturnsOne() {
 		assertEquals(1, CountingDuplicates.duplicateCount("abcdea"));
+		assertEquals(1, CountingDuplicates.cleverDuplicateCount("abcdea"));
 	}
 
 	@Test
 	public void indivisibilityReturnsOne() {
 		assertEquals(1, CountingDuplicates.duplicateCount("indivisibility"));
+		assertEquals(1, CountingDuplicates.cleverDuplicateCount("indivisibility"));
 	}
 
 	@Test
 	public void abac1ff1bReturnFour() {
 		assertEquals(4, CountingDuplicates.duplicateCount("abac1ff1b"));
+		assertEquals(4, CountingDuplicates.cleverDuplicateCount("abac1ff1b"));
 	}
 
 	@Test
@@ -39,5 +43,6 @@ class CountingDuplicatesTest {
 		String test = test1d + test1CapitalA + testTenC + testHundredB + testThousandA;
 
 		assertEquals(3, CountingDuplicates.duplicateCount(test));
+		assertEquals(3, CountingDuplicates.cleverDuplicateCount(test));
 	}
 }

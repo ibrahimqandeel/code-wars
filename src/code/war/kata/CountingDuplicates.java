@@ -25,7 +25,7 @@ public class CountingDuplicates {
 	 * @return Count of distinct case-insensitive alphabetic characters and numeric
 	 *         digits that occur more than once in the input string.
 	 * 
-	 * @solution convert ASSCI code for each char to an array index and increase the
+	 * @solution convert ASCII code for each char to an array index and increase the
 	 *           value of that index by 1 for every occurs of that char in the
 	 *           String
 	 */
@@ -44,6 +44,17 @@ public class CountingDuplicates {
 			if (charArray[index] == 2) {
 				counter++;
 			}
+		}
+		return counter;
+	}
+
+	public static int cleverDuplicateCount(String text) {
+		// Write your code here
+		int[] asciiCharArray = new int[127];
+		int counter = 0;
+		for (byte c : text.toLowerCase().getBytes()) {
+			if (++asciiCharArray[c] == 2)
+				counter++;
 		}
 		return counter;
 	}
