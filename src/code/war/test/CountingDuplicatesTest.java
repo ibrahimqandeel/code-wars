@@ -10,11 +10,6 @@ import code.war.kata.CountingDuplicates;
 class CountingDuplicatesTest {
 
 	@Test
-	void testDuplicateCount() {
-		fail("Not yet implemented"); // TODO
-	}
-
-	@Test
 	public void abcdeReturnsZero() {
 		assertEquals(0, CountingDuplicates.duplicateCount("abcde"));
 	}
@@ -30,6 +25,11 @@ class CountingDuplicatesTest {
 	}
 
 	@Test
+	public void abac1ff1bReturnFour() {
+		assertEquals(4, CountingDuplicates.duplicateCount("abac1ff1b"));
+	}
+
+	@Test
 	public void reallyLongStringContainingDuplicatesReturnsThree() {
 		String testThousandA = new String(new char[1000]).replace('\0', 'a');
 		String testHundredB = new String(new char[100]).replace('\0', 'b');
@@ -40,5 +40,4 @@ class CountingDuplicatesTest {
 
 		assertEquals(3, CountingDuplicates.duplicateCount(test));
 	}
-
 }

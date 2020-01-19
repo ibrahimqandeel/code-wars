@@ -15,12 +15,43 @@ Example
 "Indivisibilities" -> 2 # 'i' occurs seven times and 's' occurs twice
 "aA11" -> 2 # 'a' and '1'
 "ABBA" -> 2 # 'A' and 'B' each occur twice
-
  */
+
 public class CountingDuplicates {
 
-	public static int duplicateCount(String input) {
-		return 0;
+	/**
+	 * 
+	 * @param String text
+	 * @return Count of distinct case-insensitive alphabetic characters and numeric
+	 *         digits that occur more than once in the input string.
+	 * 
+	 * @solution convert ASSCI code for each char to an array index and increase the
+	 *           value of that index by 1 for every occurs of that char in the
+	 *           String
+	 */
+	public static int duplicateCount(String text) {
+		// Write your code here
+		text = text.toUpperCase();
+		int counter = 0;
+		int[] charArray = new int[43];
+		char charValue;
+		int index;
+
+		for (int i = 0; i < text.length(); i++) {
+			charValue = text.charAt(i);
+			index = (charValue - 90) + 42;
+			charArray[index]++;
+			if (charArray[index] == 2) {
+				counter++;
+			}
+		}
+
+//	         for (int i = 0; i < charArray.length; i++) {
+//	             if (charArray[i] > 1) {
+//	                 counter++;
+//	             }
+//	         }
+		return counter;
 	}
 
 	public static void main(String[] args) {
