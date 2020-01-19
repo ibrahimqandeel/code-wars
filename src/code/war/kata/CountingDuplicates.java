@@ -45,12 +45,6 @@ public class CountingDuplicates {
 				counter++;
 			}
 		}
-
-//	         for (int i = 0; i < charArray.length; i++) {
-//	             if (charArray[i] > 1) {
-//	                 counter++;
-//	             }
-//	         }
 		return counter;
 	}
 
