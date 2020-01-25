@@ -1,5 +1,13 @@
 package code.war.sort;
 
+/*
+ * Merge Sort Algorithm
+ * 
+ * Best case ---> O(n log(n))
+ * Average case ---> O(n log(n))
+ * Worst case ---> O(n log(n))
+ * Space complexity ---> O(n)
+ */
 public class MergeSort {
 
 	public static void mergeSort(int[] dataArray) {
