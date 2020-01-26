@@ -12,14 +12,26 @@ import code.war.kata.RectangleIntoSquares;
 
 public class RectangleIntoSquaresTest {
 	@Test
-	public void test1() {
+	public void sqInRecMethodTest1() {
+		List<Integer> res = new ArrayList<Integer>(Arrays.asList(3, 2, 1, 1));
+		for (int r : res)
+			assertEquals(res, RectangleIntoSquares.sqInRect(5, 3));
+	}
+
+	@Test
+	public void sqInRecMethodTest2() {
+		assertEquals(null, RectangleIntoSquares.sqInRect(5, 5));
+	}
+
+	@Test
+	public void cleverSqInRectMethodTest1() {
 		List<Integer> res = new ArrayList<Integer>(Arrays.asList(3, 2, 1, 1));
 		for (int r : res)
 			assertEquals(res, RectangleIntoSquares.cleverSqInRect(5, 3));
 	}
 
 	@Test
-	public void test2() {
+	public void cleverSqInRectMethodTest2() {
 		assertEquals(null, RectangleIntoSquares.cleverSqInRect(5, 5));
 	}
 }
