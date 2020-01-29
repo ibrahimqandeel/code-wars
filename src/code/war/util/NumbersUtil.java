@@ -1,6 +1,6 @@
 package code.war.util;
 
-public class PrimeNumbersUtil {
+public class NumbersUtil {
 
 	public static boolean isNumberPrime(double primeNumber) {
 		if (primeNumber <= 1) {
@@ -28,8 +28,28 @@ public class PrimeNumbersUtil {
 		return primeNum;
 	}
 
+	public static int getLeftDigit(int number) {
+		return number % 10;
+	}
+
+	public static String reversNumber(int number) {
+		String reversedNumber = "";
+		boolean isNegativeNumber = false;
+		if (number < 0) {
+			isNegativeNumber = true;
+		}
+		if (number >= 0 && number <= 9) {
+			return reversedNumber = number + "";
+		}
+		number = Math.abs(number);
+		while (number > 0) {
+			reversedNumber += number % 10;
+			number = number / 10;
+		}
+		return isNegativeNumber ? "-" + reversedNumber : reversedNumber;
+	}
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println(getNextPrime(36));
 	}
 }
