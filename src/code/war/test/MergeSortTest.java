@@ -4,7 +4,6 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 import org.junit.jupiter.api.Test;
 
-import code.war.kata.SortOddsInArray;
 import code.war.sort.MergeSort;
 
 class MergeSortTest {
