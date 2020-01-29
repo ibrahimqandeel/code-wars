@@ -15,7 +15,7 @@ public class RectangleIntoSquaresTest {
 	public void sqInRecMethodTest1() {
 		List<Integer> res = new ArrayList<Integer>(Arrays.asList(3, 2, 1, 1));
 		for (int r : res)
-			assertEquals(res, RectangleIntoSquares.sqInRect(5, 3));
+			assertEquals(r, RectangleIntoSquares.sqInRect(5, 3));
 	}
 
 	@Test
@@ -27,7 +27,7 @@ public class RectangleIntoSquaresTest {
 	public void cleverSqInRectMethodTest1() {
 		List<Integer> res = new ArrayList<Integer>(Arrays.asList(3, 2, 1, 1));
 		for (int r : res)
-			assertEquals(res, RectangleIntoSquares.cleverSqInRect(5, 3));
+			assertEquals(r, RectangleIntoSquares.cleverSqInRect(5, 3));
 	}
 
 	@Test
