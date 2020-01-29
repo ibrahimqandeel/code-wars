@@ -5,7 +5,7 @@ package code.war.kata;
  * @link https://www.codewars.com/kata/54d512e62a5e54c96200019e
  * 
  */
-import code.war.util.PrimeNumbersUtil;
+import code.war.util.NumbersUtil;
 
 public class PrimeDecomp {
 
@@ -16,7 +16,7 @@ public class PrimeDecomp {
 
 	private static String findFactors(int n, int prime) {
 		int counter = 0;
-		if (PrimeNumbersUtil.isNumberPrime(n)) {
+		if (NumbersUtil.isNumberPrime(n)) {
 			return buildString(n, 1);
 		}
 
@@ -29,7 +29,7 @@ public class PrimeDecomp {
 			return buildString(prime, counter);
 		}
 
-		return buildString(prime, counter) + findFactors(n, (int) PrimeNumbersUtil.getNextPrime(prime));
+		return buildString(prime, counter) + findFactors(n, (int) NumbersUtil.getNextPrime(prime));
 	}
 
 	private static String buildString(int prime, int counter) {
