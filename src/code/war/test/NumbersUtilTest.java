@@ -9,17 +9,17 @@ import code.war.util.NumbersUtil;
 class NumbersUtilTest {
 
 	@Test
-	void isNumberPrimeTestPrime() {
+	void isNumberPrimeTest() {
+
+		// Prime Numbers
 		assertEquals(true, NumbersUtil.isNumberPrime(2));
 		assertEquals(true, NumbersUtil.isNumberPrime(3));
 		assertEquals(true, NumbersUtil.isNumberPrime(5));
 		assertEquals(true, NumbersUtil.isNumberPrime(7));
 		assertEquals(true, NumbersUtil.isNumberPrime(11));
 		assertEquals(true, NumbersUtil.isNumberPrime(19));
-	}
 
-	@Test
-	void isNumberPrimeTestNotPrime() {
+		// Not Prime Numbers
 		assertEquals(false, NumbersUtil.isNumberPrime(0));
 		assertEquals(false, NumbersUtil.isNumberPrime(1));
 		assertEquals(false, NumbersUtil.isNumberPrime(4));
