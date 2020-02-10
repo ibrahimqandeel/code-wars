@@ -13,12 +13,15 @@ public class Main {
 		BinarySearchTree bst = new BinarySearchTree(10);
 
 		bst.insert(5);
-		bst.insert(20);
-		bst.insert(3);
-		bst.insert(21);
-		bst.insert(4);
+//		bst.insert(20);
+//		bst.insert(3);
+//		bst.insert(21);
+//		bst.insert(4);
+//		bst.insert(2);
+		
+		System.out.println(bst.min().getValue());
 
-		TreeNode myNode = bst.find(10);
+		TreeNode myNode = bst.find(3);
 
 		if (myNode != null) {
 			System.out.println("Parent Node ===>" + myNode.getValue());

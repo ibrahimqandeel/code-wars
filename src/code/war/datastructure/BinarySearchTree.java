@@ -39,6 +39,19 @@ public class BinarySearchTree {
 		return null;
 	}
 
+	public TreeNode min() {
+		return min(rootNode);
+	}
+
+	private TreeNode min(TreeNode node) {
+		if (node != null) {
+			while (node.leftNode != null) {
+				return min(node.leftNode);
+			}
+		}
+		return node;
+	}
+
 	public TreeNode getRootNode() {
 		return rootNode;
 	}
