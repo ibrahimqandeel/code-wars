@@ -1,6 +1,7 @@
 package code.war.kata;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 
@@ -47,7 +48,7 @@ public class EnoughIsEnough {
 			return new int[0];
 
 		final HashMap<Integer, Integer> map = new HashMap<>();
-		final List<Integer> list = new ArrayList<>();
+		List<Integer> list = new ArrayList<>();
 
 		for (final Integer i : elements) {
 			final Integer v = map.put(i, map.getOrDefault(i, 0) + 1);
