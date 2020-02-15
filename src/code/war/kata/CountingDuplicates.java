@@ -63,5 +63,4 @@ public class CountingDuplicates {
 		// TODO Auto-generated method stub
 		System.out.println("\n\t\t\t\t\t\t ***************** Count the number of Duplicates ***************** \n\n");
 	}
-
 }
