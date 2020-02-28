@@ -3,6 +3,9 @@ package code.war.hackerrank;
 import java.util.HashMap;
 import java.util.Map;
 
+/*
+ * @link: https://www.hackerrank.com/challenges/sock-merchant?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=warmup
+ */
 public class HackerRankSockMerchant {
 
 	public static int sockMerchant(int n, int[] ar) {
