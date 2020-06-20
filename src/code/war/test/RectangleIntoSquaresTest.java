@@ -8,7 +8,7 @@ import java.util.List;
 
 import org.junit.jupiter.api.Test;
 
-import code.war.kata.RectangleIntoSquares;
+import code.war.challenges.kata.RectangleIntoSquares;
 
 public class RectangleIntoSquaresTest {
 

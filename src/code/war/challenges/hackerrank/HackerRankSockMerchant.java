@@ -1,4 +1,4 @@
-package code.war.hackerrank;
+package code.war.challenges.hackerrank;
 
 import java.util.HashMap;
 import java.util.Map;

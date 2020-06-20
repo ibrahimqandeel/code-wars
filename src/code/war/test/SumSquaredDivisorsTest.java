@@ -4,7 +4,7 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
-import code.war.kata.SumSquaredDivisors;
+import code.war.challenges.kata.SumSquaredDivisors;
 
 public class SumSquaredDivisorsTest {
 

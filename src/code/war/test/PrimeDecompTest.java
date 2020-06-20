@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
-import code.war.kata.PrimeDecomp;
+import code.war.challenges.kata.PrimeDecomp;
 
 class PrimeDecompTest {
 

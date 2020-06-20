@@ -1,4 +1,4 @@
-package code.war.sort;
+package code.war.algorithms.sort;
 
 /*
  * Merge Sort Algorithm

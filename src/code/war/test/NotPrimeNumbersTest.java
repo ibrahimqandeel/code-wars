@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-import code.war.kata.NotPrimeNumbers;
+import code.war.challenges.kata.NotPrimeNumbers;
 
 class NotPrimeNumbersTest {
 

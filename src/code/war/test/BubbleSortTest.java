@@ -4,7 +4,7 @@ import static org.junit.Assert.assertArrayEquals;
 
 import org.junit.jupiter.api.Test;
 
-import code.war.sort.BubbleSort;
+import code.war.algorithms.sort.BubbleSort;
 
 class BubbleSortTest {
 

@@ -1,4 +1,4 @@
-package code.war.kata;
+package code.war.challenges.kata;
 
 /*
  * 

@@ -4,7 +4,7 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
-import code.war.kata.TimeFormatter;
+import code.war.challenges.kata.TimeFormatter;
 
 public class TimeFormatterTest {
 

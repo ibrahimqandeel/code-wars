@@ -4,7 +4,7 @@ import static org.junit.Assert.assertArrayEquals;
 
 import org.junit.jupiter.api.Test;
 
-import code.war.kata.EnoughIsEnough;
+import code.war.challenges.kata.EnoughIsEnough;
 
 public class EnoughIsEnoughTest {
 

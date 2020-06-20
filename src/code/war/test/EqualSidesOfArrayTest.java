@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
-import code.war.kata.EqualSidesOfArray;
+import code.war.challenges.kata.EqualSidesOfArray;
 
 class EqualSidesOfArrayTest {
 
